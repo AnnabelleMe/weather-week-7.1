@@ -1,14 +1,21 @@
 .container {
   width: 700px;
-  background-color: #e3f6f4;
-  border: 3px solid #6bcec6;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+  border: 3px solid pink;
   margin: 60px auto 10px;
   padding: 40px;
 }
 
 input {
   background-color: #e3f6f4;
-  border: 2px solid #6bcec6;
+  border: 2px solid pink;
   border-radius: 5px;
   color: #6f7474;
   padding: 2px 4px;
@@ -17,7 +24,7 @@ input {
 }
 
 .submit-button {
-  background-color: #6bcec6;
+  background-color: pink;
   color: #e3f6f4;
   border: 2px solid #6bcec6;
   border-radius: 5px;
@@ -34,7 +41,7 @@ input {
 }
 
 .current-location-button {
-  background-color: #6bcec6;
+  background-color: pink;
   color: #e3f6f4;
   border: 2px solid #6bcec6;
   border-radius: 5px;
@@ -54,7 +61,7 @@ input {
 }
 
 #city {
-  color: #1ab2a8;
+  color: blue;
   font-weight: 700;
   font-size: 48px;
   margin: 0 auto;
@@ -62,7 +69,7 @@ input {
 }
 
 #country {
-  color: #1ab2a8;
+  color: blue;
   font-weight: 500;
   font-size: 24px;
   margin: 0 auto;
@@ -81,7 +88,7 @@ div.current-temperature {
 }
 
 .current-temperature {
-  color: #1ab2a8;
+  color: blue;
   font-weight: 700;
   font-size: 48px;
   margin: 0 auto;
@@ -93,7 +100,7 @@ div.current-temperature {
 .degree {
   font-size: 24px;
   font-weight: 400;
-  color: #1ab2a8;
+  color: blue;
   position: relative;
   bottom: 17px;
 }
@@ -103,7 +110,7 @@ div.current-temperature {
   text-transform: capitalize;
   font-weight: 500;
   font-size: 16px;
-  color: #1ab2a8;
+  color: blue;
   text-align: center;
 }
 
@@ -128,7 +135,7 @@ div.current-temperature {
 .date-forecast {
   text-align: center;
   padding-top: 10px;
-  color: #1ab2a8;
+  color: blue;
   font-weight: 500;
   margin: 0 auto;
 }
@@ -148,7 +155,7 @@ div.current-temperature {
 }
 
 a {
-  color: #1ab2a8;
+  color: blue;
   text-decoration: none;
 }
 

@@ -115,6 +115,29 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
+//Change Fahrenheit and Celcius
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(CelsiusTemperature);
+}
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", displayCelsiusTemperature);
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", displayFahrenheitTemperature);
 //Display current city name and data
 function displayCurrentWeather(response) {
   document.querySelector("#city").innerHTML = response.data.city;
@@ -180,4 +203,4 @@ currentLocationButton.addEventListener("click", function () {
 });
 
 //Display default city on loading
-getWeatherData("Berlin");
+getWeatherData("Vienna");
